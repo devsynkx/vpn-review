@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Код верифікації Admitad -->
+    <meta name="verify-admitad" content="YOUR_ADMITAD_CODE_HERE" />
+
+    <title>Топ VPN 2025 — Порівняння та Рейтинг</title>
+
+    <!-- Базове SEO -->
+    <meta name="description" content="Огляд і порівняння VPN-сервісів 2025 року: Surfshark, NordVPN, Atlas VPN. Переваги, можливості, питання та відповіді." />
+
+    <style>
+        :root {
+            --bg: #0d0f1a;
+            --card: #161927;
+            --accent: #4f8bff;
+            --accent2: #22d3ee;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            padding: 70px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #0d0f1a 70%);
+        }
+        header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: var(--muted);
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: var(--card);
+            padding: 18px 22px;
+            border-radius: 14px;
+            border: 1px solid #222436;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin-bottom: 26px;
+        }
+
+        .intro strong {
+            color: var(--text);
+        }
+
+        /* GRID */
+        .vpn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 26px;
+        }
+
+        /* VPN CARD */
+        .vpn-card {
+            backdrop-filter: blur(6px);
+            background: rgba(22, 25, 39, 0.82);
+            padding: 26px 26px 24px;
+            border-radius: var(--radius);
+            border: 1px solid #222436;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+            transition: 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            min-height: 380px;
+        }
+
+        .vpn-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 0 30px rgba(79, 139, 255, 0.35);
+        }
+
+        .vpn-card h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: #020617;
+            padding: 5px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            margin: 6px 0 10px;
+            font-weight: 600;
+        }
+
+        .vpn-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+            min-height: 50px;
+        }
+
+        .chip {
+            padding: 5px 12px;
+            border: 1px solid #313244;
+            border-radius: 999px;
+            font-size: 12px;
+            color: var(--muted);
+            height: fit-content;
+        }
+
+        .vpn-features {
+            margin: 10px 0 20px;
+            padding-left: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            min-height: 100px;
+        }
+
+        .btn {
+            margin-top: auto;
+            display: block;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: #020617;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 15px;
+            box-shadow: 0 0 18px rgba(79, 139, 255, 0.35);
+        }
+
+        .btn:hover {
+            filter: brightness(1.08);
+        }
+
+        /* SUBCARDS */
+        .sub-card {
+            background: var(--card);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid #222436;
+            text-align: center;
+            min-height: 180px;
+        }
+
+        .sub-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        /* TABLE */
+
+        .table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+            min-width: 500px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #2a2e40;
+            text-align: center;
+        }
+
+        th {
+            background: #1f2333;
+            font-weight: 700;
+        }
+
+        /* FAQ / LEGAL */
+        h2.section-title {
+            margin-bottom: 16px;
+            font-size: 22px;
+        }
+
+        .faq h2 {
+            margin-bottom: 25px;
+        }
+
+        .faq p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-size: 14px;
+            background: var(--card);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid #222436;
+        }
+
+        .legal-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: var(--muted);
+            font-size: 13px;
+            border-top: 1px solid #1a1c28;
+            opacity: 0.75;
+        }
+
+        footer a {
+            color: var(--muted);
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 28px; }
+            header p { font-size: 15px; }
+            .vpn-card { min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Топ VPN-сервісів 2025</h1>
+    <p>Порівняння, огляди та найкращі пропозиції</p>
+</header>
+
+<div class="wrapper">
+
+    <!-- Дисклеймер / affiliate-пояснення -->
+    <div class="intro">
+        <strong>Як це працює:</strong> цей сайт може містити партнерські посилання.
+        Якщо ви оформлюєте підписку через одну з кнопок, ми можемо отримати комісію від сервісу.
+        Для вас ціна не змінюється. Інформація носить оглядовий характер і не є фінансовою чи юридичною порадою.
+    </div>
+
+    <h2 class="section-title">ТОП-3 VPN</h2>
+
+    <div class="vpn-grid">
+
+        <!-- Surfshark -->
+        <div class="vpn-card">
+            <h2>Surfshark</h2>
+            <span class="badge">Рекомендовано</span>
+
+            <div class="vpn-meta">
+                <span class="chip">Стрімінг</span>
+                <span class="chip">Геймінг</span>
+                <span class="chip">WireGuard</span>
+                <span class="chip">Безлімітні пристрої</span>
+            </div>
+
+            <ul class="vpn-features">
+                <li>Найкращий баланс між ціною та функціональністю.</li>
+                <li>Підходить для Netflix, Hulu та інших популярних платформ.</li>
+                <li>Зручні застосунки для комп’ютера та смартфона.</li>
+            </ul>
+
+            <!-- СЮДИ ВСТАВ СВОЄ ПАРТНЕРСЬКЕ ПОСИЛАННЯ SURFSHARK -->
+            <a href="YOUR_SURFSHARK_LINK" target="_blank" rel="nofollow noopener" class="btn">
+                Перейти на офіційний сайт
+            </a>
+        </div>
+
+        <!-- NordVPN -->
+        <div class="vpn-card">
+            <h2>NordVPN</h2>
+            <span class="badge" style="background: linear-gradient(90deg,#0ea5e9,#38bdf8);">
+                Топ безпеки
+            </span>
+
+            <div class="vpn-meta">
+                <span class="chip">Double VPN</span>
+                <span class="chip">Стрімінг</span>
+                <span class="chip">Privacy</span>
+            </div>
+
+            <ul class="vpn-features">
+                <li>Максимальний акцент на приватність та захист трафіку.</li>
+                <li>Окремі сервери для Tor over VPN.</li>
+                <li>Власний швидкісний протокол NordLynx.</li>
+            </ul>
+
+            <a href="#" target="_blank" rel="nofollow noopener" class="btn">
+                Дізнатись більше
+            </a>
+        </div>
+
+        <!-- Atlas VPN -->
+        <div class="vpn-card">
+            <h2>Atlas VPN</h2>
+            <span class="badge" style="background: linear-gradient(90deg,#34d399,#10b981);">
+                Бюджетний вибір
+            </span>
+
+            <div class="vpn-meta">
+                <span class="chip">Початківцям</span>
+                <span class="chip">Простий інтерфейс</span>
+            </div>
+
+            <ul class="vpn-features">
+                <li>Оптимальний для базових задач і щоденного використання.</li>
+                <li>Доступні тарифні плани.</li>
+                <li>Зручно на смартфонах та планшетах.</li>
+            </ul>
+
+            <a href="#" target="_blank" rel="nofollow noopener" class="btn">
+                Перейти
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Переваги VPN -->
+<section class="wrapper">
+    <h2 class="section-title">Переваги використання VPN</h2>
+    <div class="vpn-grid">
+        <div class="sub-card">
+            <h3>Швидкість</h3>
+            <p>Стабільний доступ до ресурсів по всьому світу без відчутної втрати швидкості (залежить від провайдера).</p>
+        </div>
+        <div class="sub-card">
+            <h3>Безпека</h3>
+            <p>Шифрування трафіку, захист у публічних Wi-Fi та базовий рівень анонімності в мережі.</p>
+        </div>
+        <div class="sub-card">
+            <h3>Доступ</h3>
+            <p>Обхід регіональних обмежень та блокувань сайтів, сервісів та стрімінгових платформ.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Порівняльна таблиця -->
+<section class="wrapper">
+    <h2 class="section-title">Порівняльна таблиця VPN</h2>
+    <p class="legal-text">
+        Оцінки наведені у спрощеному вигляді та мають оглядовий, суб’єктивний характер.
+        Перед оформленням підписки обов’язково ознайомтеся з умовами на офіційних сайтах сервісів.
+    </p>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>VPN</th>
+                <th>Швидкість</th>
+                <th>Стрімінг</th>
+                <th>Захист</th>
+            </tr>
+            <tr>
+                <td>Surfshark</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>NordVPN</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Atlas VPN</td>
+                <td>⭐⭐⭐</td>
+                <td>⭐⭐⭐</td>
+                <td>⭐⭐⭐⭐</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="wrapper faq" id="faq">
+    <h2>FAQ — Питання та відповіді</h2>
+    
+    
+    <p><strong>Навіщо потрібен VPN?</strong><br>
+    VPN допомагає захистити дані, приховати IP-адресу та отримати доступ до контенту, який може бути недоступним у вашому регіоні.</p>
+    
+    
+    <p><strong>Який VPN найкращий?</strong><br>
+    Це залежить від задач: Surfshark — універсальний варіант, NordVPN — фокус на безпеці, Atlas VPN — бюджетне рішення.</p>
+    
+    
+    <p><strong>Чи працює Netflix через VPN?</strong><br>
+    Багато преміум VPN дозволяють дивитися Netflix інших регіонів. Актуальний список можливостей завжди перевіряйте на офіційному сайті обраного сервісу.</p>
+    
+    
+    <p><strong>Чи законно використовувати VPN?</strong><br>
+    У більшості країн використання VPN є повністю законним. У країнах із жорсткою цензурою можуть бути обмеження, тому рекомендується перевіряти місцеве законодавство.</p>
+    
+    
+    <p><strong>Чи може VPN збільшити пінг у іграх?</strong><br>
+    Іноді так, але сучасні VPN з протоколами WireGuard або NordLynx можуть навіть зменшувати затримку, якщо ваш провайдер неправильно маршрутизує трафік.</p>
+    
+    
+    <p><strong>Чи приховує VPN активність від мого провайдера?</strong><br>
+    Так. Провайдер бачить лише факт підключення до VPN, але не те, що ви робите в інтернеті.</p>
+    
+    
+    <p><strong>Чи можуть VPN зберігати журнали?</strong><br>
+    Преміум-сервіси зазвичай мають політику no-logs. Завжди перевіряйте результати незалежних аудиторських перевірок.</p>
+    
+    
+    <p><strong>Чи можна використовувати VPN на кількох пристроях?</strong><br>
+    Так. Деякі сервіси, як Surfshark, дозволяють необмежену кількість підключень.</p>
+    
+    
+    <p><strong>Чи підходить VPN для торентів?</strong><br>
+    Так, але лише ті VPN, що дозволяють P2P-трафік. Наприклад, NordVPN має окремі сервери для торентів.</p>
+    
+    
+    <p><strong>Чи впливає VPN на швидкість інтернету?</strong><br>
+    Можливо, але різниця зазвичай невелика. Якість сервера і протокол відіграють ключову роль.</p>
+    </section>
+
+
+<footer>
+    © 2025 VPN-Огляд. Усі права захищені.<br>
+
+    <div style="margin-top:12px; font-size:13px; opacity:0.85;">
+        <a href="privacy.html" style="color:#9ca3af; text-decoration: underline dotted;">Політика конфіденційності</a> ·
+        <a href="terms.html" style="color:#9ca3af; text-decoration: underline dotted;">Умови використання</a> ·
+        <a href="contact.html" style="color:#9ca3af; text-decoration: underline dotted;">Контакти</a>
+    </div>
+
+    <span style="font-size:11px; display:block; margin-top:10px; opacity:0.75;">
+        *Сайт має оглядовий характер. Інформація може містити партнерські посилання.
+    </span>
+</footer>
+
+
+</body>
+</html>
